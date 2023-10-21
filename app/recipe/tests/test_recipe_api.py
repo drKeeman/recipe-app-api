@@ -148,7 +148,7 @@ class PrivateRecipeAPITests(TestCase):
         payload = {
             'title': 'New recipe title',
             'link': 'https://example.com/new-recipe.pdf',
-
+            'description': 'New description text. If it show up - that success',
             'time_minutes': 10,
             'price': Decimal('2.50'),
         }
@@ -197,4 +197,5 @@ class PrivateRecipeAPITests(TestCase):
 """
 'description': 'New decription'
 some problem with update this particular field. Should research later. Cant find answer
+UPD: patch method for recipe/{id} doesnt work - cant update description
 """
